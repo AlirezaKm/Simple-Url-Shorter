@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 from requests import get
 import click , bs4
@@ -8,14 +8,14 @@ PATH = 'tools.php'
 _OUT_MESSAGE = 'Short URL is: {}'
 
 @click.command('lazyShortURL')
-@click.option('--url','-u','url',prompt='Enter URL to Short it Please',help='Enter Your URL')
+@click.option('--url','-u','url',prompt='Enter URL to Short it Please',help='Enter URL to Short it')
 def __lazyShortURL(url):
     """ Lazy Method to Short a URL """
     PARAMS = {
         'tid' : 1,
         'full': url
     }
-    # Send Request to Short My Link
+    # Send Request to Short Link
     response = get('{}{}'.format(URL,PATH),params=PARAMS)
     # Parse Response !
     bs = bs4.BeautifulSoup(response.content,'html.parser')
