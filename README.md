@@ -1,19 +1,23 @@
 ### Installation
 
-Lazy URL Shorter requires python 2 or python 3
+Lazy URL Shorter works with python 2 and python 3
 
-Install the dependencies and devDependencies.
+Install dependencies and devDependencies.
 
 ```sh
-pip install -r requirements.txt
 git clone https://gitlab.com/toys-projects/lazy-url-shorter.git
 cd lazy-url-shorter
+pip install -r requirements.txt
 chmod +x ushorter.py
 sudo cp ushorter.py /usr/local/bin/ushorter
 ```
-
-For production environments...
-
+ 
+ 
+----
+ 
+ 
+### Usage: 
+ 
 ```sh
 $ ushorter --help
 Usage: ushorter [OPTIONS]
