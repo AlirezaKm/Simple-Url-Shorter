@@ -1,6 +1,6 @@
 ### Installation
 
-Lazy URL Shorter works with python 2 and python 3
+Lazy URL Shorter works with python 2
 
 Install dependencies and devDependencies.
 
